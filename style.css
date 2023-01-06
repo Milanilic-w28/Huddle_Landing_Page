@@ -4,6 +4,13 @@
 /* -- SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
+:root {
+  --btn-main-color: hsl(322, 100%, 66%);
+  --btn-nav-color: hsl(193, 100%, 96%);
+  --font-color: hsl(192, 100%, 9%);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -14,3 +21,78 @@ html {
 	font-size: 62.5%;
 	/* 1rem = 10px */
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 1.8rem;
+  color: var(--font-color);
+}
+
+/* HERO SECTION */
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+nav a img {
+  width: 12rem;
+}
+
+nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: #fff;
+  padding: 0.4rem 2rem;
+  border-radius: 10000px;
+  border: none;
+  box-shadow: -2px 8px 21px -11px rgba(0,0,0,0.75);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  text-align: center;
+  padding: 3rem 4rem;
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+main p {
+  font-size: 1.6rem;
+  text-justify: auto;
+}
+
+.btn-main {
+  padding: 1rem 3rem;
+  border-radius: 1000px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--btn-main-color);
+  box-shadow: -2px 8px 21px -11px rgba(0,0,0,0.75);
+  margin-bottom: 3rem;
+}
+
+main img {
+  width: 100%;
+}
+
+/* END HERO SECTION */
